@@ -1,4 +1,4 @@
-package Unit_01;
+package Unit01;
 
 /* Problem Statement:
 
@@ -49,15 +49,29 @@ class QuestionsOnString {
 		    else {
 		      System.out.println(s + " is not a Palindrome String.");
 		    }
-      }
+		
+		
+
+	}
 
 	void reverseOfAString(String s) {
 		// Write Logic Here!
+		String nstr="";
+		char ch;
+		for (int i=0; i<s.length(); i++)
+	      {
+	        ch= s.charAt(i); //extracts each character
+	        nstr= ch+nstr; //adds each character in front of the existing string
+	      }
+	      System.out.println("Reversed word: "+ nstr);
 
 	}
 	
 	void stringEqualOrNot(String s1,String s2) {
 		// Write Logic Here!
+		boolean areTwoStringsEqual = s1.equals(s2);
+		 
+        System.out.print("Two strings are equal : "+areTwoStringsEqual);
 		
 	}
 }
